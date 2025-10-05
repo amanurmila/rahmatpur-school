@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar/Navbar";
+import NavDown from "@/components/Navbar/NavDown";
 
 const inter = Inter({ weight: ["400", "500", "600", "700", "800", "900"] });
 
@@ -11,7 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        <NavDown />
+        {children}
+      </body>
     </html>
   );
 }

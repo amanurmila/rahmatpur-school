@@ -1,5 +1,10 @@
-import Image from "next/image";
+import Homepage from "@/components/Home/Home";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <Homepage />
+    </div>
+  );
 }
